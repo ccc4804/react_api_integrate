@@ -10,6 +10,7 @@ function Users() {
   const {loading, data:users, error} = state.users;
   const fetchData = () => {
       getUsers(dispatch);
+      console.log("users call")
   }
   if (loading) return <div>로딩 중...</div>;
   if (error) return <div>에러가 발생했습니다.</div>;
